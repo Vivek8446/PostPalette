@@ -58,18 +58,18 @@ function Header() {
           </div>
 
           {/* Navigation Links */}
-          <ul className={`fixed inset-0 md:mb-0 mb-[44rem] top-[41px] bg-blue-600 md:bg-transparent md:static md:flex font-mono md:ml-auto md:items-center z-40 ${isMenuOpen  ? 'block' : 'hidden'}  md:flex`}>
+          <ul className={`fixed inset-0 md:mb-0  top-[38px] md:bg-transparent md:static md:flex  font-mono md:ml-auto md:items-center z-40 ${isMenuOpen  ? 'block' : 'hidden'}  md:flex`}>
           
             {navItems.map((item) => 
               item.active ? (
-                <li key={item.name} className='md:mr-4 '>
+                <li key={item.name} className='md:mr-4 bg-blue-700 '>
                 
                   <button
                     onClick={() => {
                       navigate(item.slug)
                       setIsMenuOpen(false) // Close menu after navigation on mobile
                     }}
-                    className='block md:inline-block px-3 text-xl  py-3 text-white duration-200 hover:bg-blue-800 rounded-full'
+                    className='block -m-[1px] md:inline-block px-3 text-xl  py-3 text-white duration-200 hover:bg-blue-800 rounded-full'
                   >
                     {item.name}
                     
@@ -82,7 +82,7 @@ function Header() {
 
             
             {authStatus && (
-              <li className='md:mr-4'>
+              <li className='md:mr-4 bg-blue-700 pb-2'>
                 <LogoutBtn />
               </li>
             )} 
