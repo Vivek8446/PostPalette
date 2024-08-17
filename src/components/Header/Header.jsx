@@ -41,7 +41,7 @@ function Header() {
   ]
 
   return (
-    <header className='sticky top-0 py-1 z-50 shadow bg-blue-700 fadeInUp-animation'>
+    <header className='sticky top-0 md:p-2 py-4 z-50 shadow bg-blue-700 fadeInUp-animation'>
       <Container>
         <nav className='flex items-center'>
           <div className='mr-4'>

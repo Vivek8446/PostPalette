@@ -34,7 +34,7 @@ function Home() {
                         <Link to='/add-post'>
 
                             <button className="relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-white text-blue-800 font-bold  hover:text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 rounded-full before:rounded-full before:bg-blue-600 before:duration-700 before:ease-out hover:shadow-blue-600 hover:before:h-56 hover:before:w-56">
-                                <span className=" ">Start Uploading</span>
+                                <span className=" z-10">Start Uploading</span>
                             </button>
                         </Link>
                         </div>
@@ -44,7 +44,7 @@ function Home() {
 
                             <Link to='/login'>
                                 <button className="relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-white text-blue-800 font-bold  hover:text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 rounded-full before:rounded-full before:bg-blue-600 before:duration-500 before:ease-out hover:shadow-blue-600 hover:before:h-56 hover:before:w-56">
-                                    <span class=" ">Start Uploading</span>
+                                    <span class=" z-10">Start Uploading</span>
                                 </button>
                             </Link>
                         </div>
